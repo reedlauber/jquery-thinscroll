@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery ThinScroll Test Page</title>
+	<style type="text/css">
+		html, body { margin:0;padding:0;font:13px 'Helvetica Neue',Helvetica,Arial,Sans-serif; }
+		ol, ul, li { margin:0;padding:0;list-style:none; }
+		#container { margin:40px; }
+
+		.test-container { float:left;margin-right:20px; }
+			.test { height:200px;width:300px;overflow:hidden;background-color:#dadada; }
+				.test li { padding:20px 16px;border-top:1px solid #eaeaea;border-bottom:1px solid #cecece; }
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="../jquery.thinscroll.js"></script>
+	<script>
+		$(function() {
+			$('.test1 ul, .test2 ul, .test3 ul').thinScroll();
+			$('.test4 ul').thinScroll({ padding:12 });
+			$('.test5 ul').thinScroll({ width:20 });
+			$('.test6 ul').thinScroll({ speed:1 });
+			$('.test7 ul').thinScroll({ speed:10 });
+			$('.test8 ul').thinScroll({ opacity:0.8 });
+		});
+	</script>
+</head>
+<body>
+	<div id="container">
+		<h1>jQuery ThinScroll Test</h1>
+
+		<div class="test-container">
+			<h2>Default</h2>
+			<div class="test test1">
+				<ul>
+					<li>1.</li>
+					<li>2.</li>
+					<li>3.</li>
+					<li>4.</li>
+					<li>5.</li>
+					<li>6.</li>
+					<li>7.</li>
+					<li>8.</li>
+					<li>9.</li>
+					<li>10.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="test-container">
+			<h2>Longer</h2>
+			<div class="test test2">
+				<ul>
+					<li>1.</li>
+					<li>2.</li>
+					<li>3.</li>
+					<li>4.</li>
+					<li>5.</li>
+					<li>6.</li>
+					<li>7.</li>
+					<li>8.</li>
+					<li>9.</li>
+					<li>10.</li>
+					<li>11.</li>
+					<li>12.</li>
+					<li>13.</li>
+					<li>14.</li>
+					<li>15.</li>
+					<li>16.</li>
+					<li>17.</li>
+					<li>18.</li>
+					<li>19.</li>
+					<li>20.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="test-container">
+			<h2>Very Long (Test min bar height)</h2>
+			<div class="test test3">
+				<ul>
+					<li>1.</li>
+					<li>2.</li>
+					<li>3.</li>
+					<li>4.</li>
+					<li>5.</li>
+					<li>6.</li>
+					<li>7.</li>
+					<li>8.</li>
+					<li>9.</li>
+					<li>10.</li>
+					<li>11.</li>
+					<li>12.</li>
+					<li>13.</li>
+					<li>14.</li>
+					<li>15.</li>
+					<li>16.</li>
+					<li>17.</li>
+					<li>18.</li>
+					<li>19.</li>
+					<li>20.</li>
+					<li>21.</li>
+					<li>22.</li>
+					<li>23.</li>
+					<li>24.</li>
+					<li>25.</li>
+					<li>26.</li>
+					<li>27.</li>
+					<li>28.</li>
+					<li>29.</li>
+					<li>30.</li>
+					<li>31.</li>
+					<li>32.</li>
+					<li>33.</li>
+					<li>34.</li>
+					<li>35.</li>
+					<li>36.</li>
+					<li>37.</li>
+					<li>38.</li>
+					<li>39.</li>
+					<li>40.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="test-container">
+			<h2>Custom Padding</h2>
+			<div class="test test4">
+				<ul>
+					<li>1.</li>
+					<li>2.</li>
+					<li>3.</li>
+					<li>4.</li>
+					<li>5.</li>
+					<li>6.</li>
+					<li>7.</li>
+					<li>8.</li>
+					<li>9.</li>
+					<li>10.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="test-container">
+			<h2>Custom Bar Width</h2>
+			<div class="test test5">
+				<ul>
+					<li>1.</li>
+					<li>2.</li>
+					<li>3.</li>
+					<li>4.</li>
+					<li>5.</li>
+					<li>6.</li>
+					<li>7.</li>
+					<li>8.</li>
+					<li>9.</li>
+					<li>10.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="test-container">
+			<h2>Custom Speed (Slow)</h2>
+			<div class="test test6">
+				<ul>
+					<li>1.</li>
+					<li>2.</li>
+					<li>3.</li>
+					<li>4.</li>
+					<li>5.</li>
+					<li>6.</li>
+					<li>7.</li>
+					<li>8.</li>
+					<li>9.</li>
+					<li>10.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="test-container">
+			<h2>Custom Speed (Fast)</h2>
+			<div class="test test7">
+				<ul>
+					<li>1.</li>
+					<li>2.</li>
+					<li>3.</li>
+					<li>4.</li>
+					<li>5.</li>
+					<li>6.</li>
+					<li>7.</li>
+					<li>8.</li>
+					<li>9.</li>
+					<li>10.</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="test-container">
+			<h2>Custom Opacity</h2>
+			<div class="test test8">
+				<ul>
+					<li>1.</li>
+					<li>2.</li>
+					<li>3.</li>
+					<li>4.</li>
+					<li>5.</li>
+					<li>6.</li>
+					<li>7.</li>
+					<li>8.</li>
+					<li>9.</li>
+					<li>10.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
